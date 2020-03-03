@@ -1,0 +1,22 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "coom.example.lesson3"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "coom.example.lesson3"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "coom.example.lesson3"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "coom.example.lesson3"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "coom.example.lesson3"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "coom.example.lesson3"
+    }
+  },
+  "dependent_plugins": {}
+}

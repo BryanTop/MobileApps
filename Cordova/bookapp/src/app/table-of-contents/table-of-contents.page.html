@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>TableOfContents</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)='changePage(chapter)' [routerLink]="['/chapter/' + chapter.id]" [routerDirection]="'root'" *ngFor="let chapter of chapters">
+      {{chapter.title}}
+      page: {{chapter.pages}}
+    </ion-item>
+  </ion-list>
+  <button [routerLink]="['/home']" [routerDirection]="'root'">Back</button>
+  <button [routerLink]="['/chapter/1']" [routerDirection]="'root'">Read On</button>
+</ion-content>

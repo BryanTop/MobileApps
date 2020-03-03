@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Chapter {{chapter.id}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <h1 style="width: 50%;margin: auto;">{{chapter.title}}</h1>
+  <div *ngFor="let page of pages">
+    <ion-item *ngIf="page.pageNumber == pageNumber">
+      <div style="width: 100%;">
+        <p style="width: 80%; margin: auto;;">{{page.content}}</p>
+      </div>
+    </ion-item>
+  </div>
+  <p>{{title}}: Page {{currentPage}}</p>
+  <button id="previous" (click)="previousPage()" >Previous page</button>
+  <button id="next" (click)="nextPage()">Next page</button>
+  <br>
+  <button id="nextChpter" (click)=NextChapter()></button>
+</ion-content>

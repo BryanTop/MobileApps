@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Welcome to My Book Turner</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci inventore deserunt, iusto omnis facere eveniet! Distinctio quia repudiandae non esse, quam architecto. Reiciendis inventore vitae non fuga libero maiores asperiores?</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-item [routerDirection]="'root'" [routerLink]="'/table-of-contents'">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Table of Contents</ion-label>
+      </ion-item>
+      <ion-item [routerDirection]="'root'" [routerLink]="'/'+ chapter">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Read On</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
